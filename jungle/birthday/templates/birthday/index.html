@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'birthday/style.css' %}">
+    <title>is it my birthday</title>
+</head>
+<body>
+    {% if birthday %}
+        <h1>YEAH. HAPPY BIRTHDAY </h1>
+    {% else %}
+        <h1>OOPS! ITS NOT YOUR BIRTHDAY </h1>
+    {% endif %}
+</body>
+</html>

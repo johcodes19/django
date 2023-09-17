@@ -1,0 +1,14 @@
+{% extends "todo/layout.html" %}
+
+{% block body%}
+
+<form action="{% url 'add' %}" method="post">
+    {% csrf_token %}
+    <label for="input">What items do you want to add? </label><br>
+    <input type="text">
+    <input type="submit" value="SUBMIT">
+</form>
+<br><br><br>
+<a href="{% url 'index' %}">SEE TASKS</a>
+
+{% endblock %}
