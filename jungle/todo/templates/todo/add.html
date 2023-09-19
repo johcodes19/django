@@ -2,10 +2,10 @@
 
 {% block body%}
 
-<form action="{% url 'add' %}" method="post">
+<form action="{% url 'todo:add' %}" method="post">
     {% csrf_token %}
     <label for="input">What items do you want to add? </label><br>
-    <input type="text">
+    {{ form }}
     <input type="submit" value="SUBMIT">
 </form>
 <br><br><br>
